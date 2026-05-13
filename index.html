@@ -389,6 +389,14 @@
             scroll-snap-align: start;
         }
 
+        .project-video {
+            width: 100%;
+            border-radius: 4px;
+            margin-bottom: 24px;
+            background: var(--light);
+            cursor: pointer;
+        }
+
         .gallery-hint {
             display: flex;
             justify-content: flex-end;
@@ -564,6 +572,7 @@
 
             .project-gallery img { height: 420px; }
             .project-gallery video { height: 420px; }
+            .project-video { width: 100%; }
 
             .divider { padding: 0 28px; margin-bottom: 100px; }
             footer { flex-direction: column; gap: 40px; padding: 60px 28px; }
@@ -671,12 +680,12 @@
                 </dl>
             </div>
         </div>
+        <video class="project-video" src="2025_CVD/CVD-05.mp4" muted loop playsinline preload="metadata"></video>
         <div class="project-gallery">
             <img src="2025_CVD/cvd-01.jpg" alt="CVD Campaign" loading="lazy">
             <img src="2025_CVD/cvd-02.jpg" alt="CVD Campaign" loading="lazy">
             <img src="2025_CVD/cvd-03.jpg" alt="CVD Campaign" loading="lazy">
             <img src="2025_CVD/cvd-04.jpg" alt="CVD Campaign" loading="lazy">
-            <video src="2025_CVD/CVD-05.mp4" muted loop playsinline preload="metadata"></video>
         </div>
         <div class="gallery-hint">
             <span>Scroll</span>
@@ -714,6 +723,7 @@
                 </dl>
             </div>
         </div>
+        <video class="project-video" src="2023_EC_Holiday/snowglobe.mp4" muted loop playsinline preload="metadata"></video>
         <div class="project-gallery">
             <img src="2023_EC_Holiday/home.png" alt="EC Holiday" loading="lazy">
             <img src="2023_EC_Holiday/shaking.png" alt="EC Holiday" loading="lazy">
@@ -721,7 +731,6 @@
             <img src="2023_EC_Holiday/result.png" alt="EC Holiday" loading="lazy">
             <img src="2023_EC_Holiday/share-snowglobe.png" alt="EC Holiday" loading="lazy">
             <img src="2023_EC_Holiday/home-share.png" alt="EC Holiday" loading="lazy">
-            <video src="2023_EC_Holiday/snowglobe.mp4" muted loop playsinline preload="metadata"></video>
         </div>
         <div class="gallery-hint">
             <span>Scroll</span>
@@ -801,6 +810,7 @@
                 </dl>
             </div>
         </div>
+        <video class="project-video" src="CD_NSO_Archival_Shooting/archival-film.mp4" muted loop playsinline preload="metadata"></video>
         <div class="project-gallery">
             <img src="CD_NSO_Archival_Shooting/IMG_4439.jpg" alt="Chengdu NSO" loading="lazy">
             <img src="CD_NSO_Archival_Shooting/IMG_4440.jpg" alt="Chengdu NSO" loading="lazy">
@@ -808,7 +818,6 @@
             <img src="CD_NSO_Archival_Shooting/IMG_4442.jpg" alt="Chengdu NSO" loading="lazy">
             <img src="CD_NSO_Archival_Shooting/IMG_4443.jpg" alt="Chengdu NSO" loading="lazy">
             <img src="CD_NSO_Archival_Shooting/IMG_4444.jpg" alt="Chengdu NSO" loading="lazy">
-            <video src="CD_NSO_Archival_Shooting/archival-film.mp4" muted loop playsinline preload="metadata"></video>
         </div>
         <div class="gallery-hint">
             <span>Scroll</span>
@@ -896,7 +905,7 @@
         lb.addEventListener('click', e => { if (e.target !== lbImg) lb.classList.remove('active'); });
 
         // Video play: hover on desktop, auto on mobile
-        document.querySelectorAll('.project-gallery video').forEach(v => {
+        document.querySelectorAll('video').forEach(v => {
             v.addEventListener('mouseenter', () => v.play());
             v.addEventListener('mouseleave', () => { v.pause(); v.currentTime = 0; });
         });
@@ -904,7 +913,7 @@
             if (e.isIntersecting) e.target.play().catch(() => {});
             else { e.target.pause(); e.target.currentTime = 0; }
         }), { threshold: 0.5 });
-        document.querySelectorAll('.project-gallery video').forEach(v => videoObs.observe(v));
+        document.querySelectorAll('video').forEach(v => videoObs.observe(v));
 
         // Smooth scroll
         document.querySelectorAll('a[href^="#"]').forEach(a => {
