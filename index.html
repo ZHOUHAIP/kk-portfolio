@@ -302,6 +302,12 @@
             margin-bottom: 48px;
         }
 
+        .project-text {
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+        }
+
         .project-desc {
             font-size: 15px;
             font-weight: 400;
@@ -332,6 +338,14 @@
         .project-details dd {
             font-weight: 400;
             color: #333;
+        }
+
+        .project-body video {
+            width: 100%;
+            border-radius: 4px;
+            background: var(--light);
+            cursor: pointer;
+            align-self: start;
         }
 
         /* Gallery - Horizontal Scroll */
@@ -392,7 +406,6 @@
         .project-video {
             width: 100%;
             border-radius: 4px;
-            margin-bottom: 24px;
             background: var(--light);
             cursor: pointer;
         }
@@ -569,10 +582,10 @@
             .project-header { flex-direction: column; gap: 12px; }
             .project-meta { text-align: left; }
             .project-body { grid-template-columns: 1fr; gap: 32px; }
+            .project-body video { max-height: 420px; object-fit: contain; }
 
             .project-gallery img { height: 420px; }
             .project-gallery video { height: 420px; }
-            .project-video { width: 100%; }
 
             .divider { padding: 0 28px; margin-bottom: 100px; }
             footer { flex-direction: column; gap: 40px; padding: 60px 28px; }
@@ -665,22 +678,24 @@
             </div>
         </div>
         <div class="project-body">
-            <div class="project-desc">
-                <p>The digital activation strategy centered on "The Birthday" as the core creative idea, using interactive personalization to help the target audience express intimate and meaningful love.</p>
-                <p style="margin-top:16px">By transforming the gift-finding process into a more engaging and enjoyable journey, the experience enhanced user interaction and elevated the overall customer journey.</p>
+            <div class="project-text">
+                <div class="project-desc">
+                    <p>The digital activation strategy centered on "The Birthday" as the core creative idea, using interactive personalization to help the target audience express intimate and meaningful love.</p>
+                    <p style="margin-top:16px">By transforming the gift-finding process into a more engaging and enjoyable journey, the experience enhanced user interaction and elevated the overall customer journey.</p>
+                </div>
+                <div class="project-details">
+                    <dl>
+                        <dt>Role</dt>
+                        <dd>Design Lead</dd>
+                        <dt>Collaboration</dt>
+                        <dd>Creative Director, Global Creative Team</dd>
+                        <dt>Focus</dt>
+                        <dd>Interactive Personalization</dd>
+                    </dl>
+                </div>
             </div>
-            <div class="project-details">
-                <dl>
-                    <dt>Role</dt>
-                    <dd>Design Lead</dd>
-                    <dt>Collaboration</dt>
-                    <dd>Creative Director, Global Creative Team</dd>
-                    <dt>Focus</dt>
-                    <dd>Interactive Personalization</dd>
-                </dl>
-            </div>
+            <video src="2025_CVD/CVD-05.mp4" muted loop playsinline preload="metadata"></video>
         </div>
-        <video class="project-video" src="2025_CVD/CVD-05.mp4" muted loop playsinline preload="metadata"></video>
         <div class="project-gallery">
             <img src="2025_CVD/cvd-01.jpg" alt="CVD Campaign" loading="lazy">
             <img src="2025_CVD/cvd-02.jpg" alt="CVD Campaign" loading="lazy">
@@ -708,22 +723,24 @@
             </div>
         </div>
         <div class="project-body">
-            <div class="project-desc">
-                <p>The digital activation concept was built around "The Snow Globe", creating an interactive snowfall experience that engaged customers and evoked a sense of love and romance.</p>
-                <p style="margin-top:16px">With each phone shake, users triggered snowfall and discovered a new product with tailored copy. This playful interaction enhanced user engagement and helped drive sales conversion.</p>
+            <div class="project-text">
+                <div class="project-desc">
+                    <p>The digital activation concept was built around "The Snow Globe", creating an interactive snowfall experience that engaged customers and evoked a sense of love and romance.</p>
+                    <p style="margin-top:16px">With each phone shake, users triggered snowfall and discovered a new product with tailored copy. This playful interaction enhanced user engagement and helped drive sales conversion.</p>
+                </div>
+                <div class="project-details">
+                    <dl>
+                        <dt>Role</dt>
+                        <dd>Visual & Motion Production</dd>
+                        <dt>Focus</dt>
+                        <dd>Interactive Snowfall Experience</dd>
+                        <dt>Collaboration</dt>
+                        <dd>Third-party Developers</dd>
+                    </dl>
+                </div>
             </div>
-            <div class="project-details">
-                <dl>
-                    <dt>Role</dt>
-                    <dd>Visual & Motion Production</dd>
-                    <dt>Focus</dt>
-                    <dd>Interactive Snowfall Experience</dd>
-                    <dt>Collaboration</dt>
-                    <dd>Third-party Developers</dd>
-                </dl>
-            </div>
+            <video src="2023_EC_Holiday/snowglobe.mp4" muted loop playsinline preload="metadata"></video>
         </div>
-        <video class="project-video" src="2023_EC_Holiday/snowglobe.mp4" muted loop playsinline preload="metadata"></video>
         <div class="project-gallery">
             <img src="2023_EC_Holiday/home.png" alt="EC Holiday" loading="lazy">
             <img src="2023_EC_Holiday/shaking.png" alt="EC Holiday" loading="lazy">
@@ -795,22 +812,24 @@
             </div>
         </div>
         <div class="project-body">
-            <div class="project-desc">
-                <p>This project covered store window photography and archival video production for the Chengdu new store opening in March 2025.</p>
-                <p style="margin-top:16px">I consolidated brand references and production requirements, briefed the agency, and supported the on-site shoot. I also coordinated review rounds with the Creative Director and global stakeholders to ensure the final assets met brand standards and were delivered on time for launch.</p>
+            <div class="project-text">
+                <div class="project-desc">
+                    <p>This project covered store window photography and archival video production for the Chengdu new store opening in March 2025.</p>
+                    <p style="margin-top:16px">I consolidated brand references and production requirements, briefed the agency, and supported the on-site shoot. I also coordinated review rounds with the Creative Director and global stakeholders to ensure the final assets met brand standards and were delivered on time for launch.</p>
+                </div>
+                <div class="project-details">
+                    <dl>
+                        <dt>Role</dt>
+                        <dd>Production Lead</dd>
+                        <dt>Scope</dt>
+                        <dd>Store Photography & Video</dd>
+                        <dt>Location</dt>
+                        <dd>Chengdu</dd>
+                    </dl>
+                </div>
             </div>
-            <div class="project-details">
-                <dl>
-                    <dt>Role</dt>
-                    <dd>Production Lead</dd>
-                    <dt>Scope</dt>
-                    <dd>Store Photography & Video</dd>
-                    <dt>Location</dt>
-                    <dd>Chengdu</dd>
-                </dl>
-            </div>
+            <video src="CD_NSO_Archival_Shooting/archival-film.mp4" muted loop playsinline preload="metadata"></video>
         </div>
-        <video class="project-video" src="CD_NSO_Archival_Shooting/archival-film.mp4" muted loop playsinline preload="metadata"></video>
         <div class="project-gallery">
             <img src="CD_NSO_Archival_Shooting/IMG_4439.jpg" alt="Chengdu NSO" loading="lazy">
             <img src="CD_NSO_Archival_Shooting/IMG_4440.jpg" alt="Chengdu NSO" loading="lazy">
