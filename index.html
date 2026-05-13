@@ -925,6 +925,14 @@
         }), { threshold: 0.2 });
         document.querySelectorAll('video').forEach(v => videoObs.observe(v));
 
+        // Persist gallery scroll position
+        const galleries = document.querySelectorAll('.project-gallery');
+        galleries.forEach((g, i) => {
+            const key = 'gallery-scroll-' + i;
+            g.scrollLeft = sessionStorage.getItem(key) || 0;
+            g.addEventListener('scroll', () => sessionStorage.setItem(key, g.scrollLeft));
+        });
+
         // Smooth scroll
         document.querySelectorAll('a[href^="#"]').forEach(a => {
             a.addEventListener('click', e => {
