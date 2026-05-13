@@ -354,7 +354,9 @@
         }
 
         .project-media-video video {
-            width: 560px;
+            height: 560px;
+            width: auto;
+            object-fit: contain;
             border-radius: 4px;
             background: var(--light);
             cursor: pointer;
@@ -599,7 +601,7 @@
             .project-body { grid-template-columns: 1fr; gap: 32px; }
 
             .project-media { flex-direction: column; }
-            .project-media-video video { width: 100%; }
+            .project-media-video video { height: 420px; width: 100%; object-fit: contain; }
 
             .project-gallery img { height: 420px; }
             .project-gallery video { height: 420px; }
