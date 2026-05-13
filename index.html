@@ -340,14 +340,6 @@
             color: #333;
         }
 
-        .project-body video {
-            width: 100%;
-            border-radius: 4px;
-            background: var(--light);
-            cursor: pointer;
-            align-self: start;
-        }
-
         /* Gallery - Horizontal Scroll */
         .project-gallery {
             display: flex;
@@ -355,10 +347,18 @@
             overflow-x: auto;
             overflow-y: hidden;
             padding-bottom: 16px;
-            scroll-snap-type: x mandatory;
+            scroll-snap-type: x proximity;
             -webkit-overflow-scrolling: touch;
             scrollbar-width: thin;
             scrollbar-color: var(--light) transparent;
+        }
+
+        .project-gallery video:first-child {
+            position: sticky;
+            left: 0;
+            flex-shrink: 0;
+            z-index: 1;
+            scroll-snap-align: start;
         }
 
         .project-gallery::-webkit-scrollbar {
@@ -582,7 +582,6 @@
             .project-header { flex-direction: column; gap: 12px; }
             .project-meta { text-align: left; }
             .project-body { grid-template-columns: 1fr; gap: 32px; }
-            .project-body video { max-height: 420px; object-fit: contain; }
 
             .project-gallery img { height: 420px; }
             .project-gallery video { height: 420px; }
@@ -694,9 +693,9 @@
                     </dl>
                 </div>
             </div>
-            <video src="2025_CVD/CVD-05.mp4" muted loop playsinline preload="metadata"></video>
         </div>
         <div class="project-gallery">
+            <video src="2025_CVD/CVD-05.mp4" muted loop playsinline preload="metadata"></video>
             <img src="2025_CVD/cvd-01.jpg" alt="CVD Campaign" loading="lazy">
             <img src="2025_CVD/cvd-02.jpg" alt="CVD Campaign" loading="lazy">
             <img src="2025_CVD/cvd-03.jpg" alt="CVD Campaign" loading="lazy">
@@ -739,9 +738,9 @@
                     </dl>
                 </div>
             </div>
-            <video src="2023_EC_Holiday/snowglobe.mp4" muted loop playsinline preload="metadata"></video>
         </div>
         <div class="project-gallery">
+            <video src="2023_EC_Holiday/snowglobe.mp4" muted loop playsinline preload="metadata"></video>
             <img src="2023_EC_Holiday/home.png" alt="EC Holiday" loading="lazy">
             <img src="2023_EC_Holiday/shaking.png" alt="EC Holiday" loading="lazy">
             <img src="2023_EC_Holiday/register.png" alt="EC Holiday" loading="lazy">
@@ -828,9 +827,9 @@
                     </dl>
                 </div>
             </div>
-            <video src="CD_NSO_Archival_Shooting/archival-film.mp4" muted loop playsinline preload="metadata"></video>
         </div>
         <div class="project-gallery">
+            <video src="CD_NSO_Archival_Shooting/archival-film.mp4" muted loop playsinline preload="metadata"></video>
             <img src="CD_NSO_Archival_Shooting/IMG_4439.jpg" alt="Chengdu NSO" loading="lazy">
             <img src="CD_NSO_Archival_Shooting/IMG_4440.jpg" alt="Chengdu NSO" loading="lazy">
             <img src="CD_NSO_Archival_Shooting/IMG_4441.jpg" alt="Chengdu NSO" loading="lazy">
