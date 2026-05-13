@@ -340,6 +340,27 @@
             color: #333;
         }
 
+        /* Media Row */
+        .project-media {
+            display: flex;
+            gap: 24px;
+            align-items: flex-start;
+        }
+
+        .project-media-video {
+            flex-shrink: 0;
+            position: sticky;
+            left: 0;
+        }
+
+        .project-media-video video {
+            width: 560px;
+            border-radius: 4px;
+            background: var(--light);
+            cursor: pointer;
+            display: block;
+        }
+
         /* Gallery - Horizontal Scroll */
         .project-gallery {
             display: flex;
@@ -351,14 +372,8 @@
             -webkit-overflow-scrolling: touch;
             scrollbar-width: thin;
             scrollbar-color: var(--light) transparent;
-        }
-
-        .project-gallery video:first-child {
-            position: sticky;
-            left: 0;
-            flex-shrink: 0;
-            z-index: 1;
-            scroll-snap-align: start;
+            flex: 1;
+            min-width: 0;
         }
 
         .project-gallery::-webkit-scrollbar {
@@ -583,6 +598,9 @@
             .project-meta { text-align: left; }
             .project-body { grid-template-columns: 1fr; gap: 32px; }
 
+            .project-media { flex-direction: column; }
+            .project-media-video video { width: 100%; }
+
             .project-gallery img { height: 420px; }
             .project-gallery video { height: 420px; }
 
@@ -694,12 +712,16 @@
                 </div>
             </div>
         </div>
-        <div class="project-gallery">
-            <video src="2025_CVD/CVD-05.mp4" muted loop playsinline preload="metadata"></video>
-            <img src="2025_CVD/cvd-01.jpg" alt="CVD Campaign" loading="lazy">
-            <img src="2025_CVD/cvd-02.jpg" alt="CVD Campaign" loading="lazy">
-            <img src="2025_CVD/cvd-03.jpg" alt="CVD Campaign" loading="lazy">
-            <img src="2025_CVD/cvd-04.jpg" alt="CVD Campaign" loading="lazy">
+        <div class="project-media">
+            <div class="project-media-video">
+                <video src="2025_CVD/CVD-05.mp4" muted loop playsinline preload="metadata"></video>
+            </div>
+            <div class="project-gallery">
+                <img src="2025_CVD/cvd-01.jpg" alt="CVD Campaign" loading="lazy">
+                <img src="2025_CVD/cvd-02.jpg" alt="CVD Campaign" loading="lazy">
+                <img src="2025_CVD/cvd-03.jpg" alt="CVD Campaign" loading="lazy">
+                <img src="2025_CVD/cvd-04.jpg" alt="CVD Campaign" loading="lazy">
+            </div>
         </div>
         <div class="gallery-hint">
             <span>Scroll</span>
@@ -739,14 +761,18 @@
                 </div>
             </div>
         </div>
-        <div class="project-gallery">
-            <video src="2023_EC_Holiday/snowglobe.mp4" muted loop playsinline preload="metadata"></video>
-            <img src="2023_EC_Holiday/home.png" alt="EC Holiday" loading="lazy">
-            <img src="2023_EC_Holiday/shaking.png" alt="EC Holiday" loading="lazy">
-            <img src="2023_EC_Holiday/register.png" alt="EC Holiday" loading="lazy">
-            <img src="2023_EC_Holiday/result.png" alt="EC Holiday" loading="lazy">
-            <img src="2023_EC_Holiday/share-snowglobe.png" alt="EC Holiday" loading="lazy">
-            <img src="2023_EC_Holiday/home-share.png" alt="EC Holiday" loading="lazy">
+        <div class="project-media">
+            <div class="project-media-video">
+                <video src="2023_EC_Holiday/snowglobe.mp4" muted loop playsinline preload="metadata"></video>
+            </div>
+            <div class="project-gallery">
+                <img src="2023_EC_Holiday/home.png" alt="EC Holiday" loading="lazy">
+                <img src="2023_EC_Holiday/shaking.png" alt="EC Holiday" loading="lazy">
+                <img src="2023_EC_Holiday/register.png" alt="EC Holiday" loading="lazy">
+                <img src="2023_EC_Holiday/result.png" alt="EC Holiday" loading="lazy">
+                <img src="2023_EC_Holiday/share-snowglobe.png" alt="EC Holiday" loading="lazy">
+                <img src="2023_EC_Holiday/home-share.png" alt="EC Holiday" loading="lazy">
+            </div>
         </div>
         <div class="gallery-hint">
             <span>Scroll</span>
@@ -828,14 +854,18 @@
                 </div>
             </div>
         </div>
-        <div class="project-gallery">
-            <video src="CD_NSO_Archival_Shooting/archival-film.mp4" muted loop playsinline preload="metadata"></video>
-            <img src="CD_NSO_Archival_Shooting/IMG_4439.jpg" alt="Chengdu NSO" loading="lazy">
-            <img src="CD_NSO_Archival_Shooting/IMG_4440.jpg" alt="Chengdu NSO" loading="lazy">
-            <img src="CD_NSO_Archival_Shooting/IMG_4441.jpg" alt="Chengdu NSO" loading="lazy">
-            <img src="CD_NSO_Archival_Shooting/IMG_4442.jpg" alt="Chengdu NSO" loading="lazy">
-            <img src="CD_NSO_Archival_Shooting/IMG_4443.jpg" alt="Chengdu NSO" loading="lazy">
-            <img src="CD_NSO_Archival_Shooting/IMG_4444.jpg" alt="Chengdu NSO" loading="lazy">
+        <div class="project-media">
+            <div class="project-media-video">
+                <video src="CD_NSO_Archival_Shooting/archival-film.mp4" muted loop playsinline preload="metadata"></video>
+            </div>
+            <div class="project-gallery">
+                <img src="CD_NSO_Archival_Shooting/IMG_4439.jpg" alt="Chengdu NSO" loading="lazy">
+                <img src="CD_NSO_Archival_Shooting/IMG_4440.jpg" alt="Chengdu NSO" loading="lazy">
+                <img src="CD_NSO_Archival_Shooting/IMG_4441.jpg" alt="Chengdu NSO" loading="lazy">
+                <img src="CD_NSO_Archival_Shooting/IMG_4442.jpg" alt="Chengdu NSO" loading="lazy">
+                <img src="CD_NSO_Archival_Shooting/IMG_4443.jpg" alt="Chengdu NSO" loading="lazy">
+                <img src="CD_NSO_Archival_Shooting/IMG_4444.jpg" alt="Chengdu NSO" loading="lazy">
+            </div>
         </div>
         <div class="gallery-hint">
             <span>Scroll</span>
