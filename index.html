@@ -601,7 +601,8 @@
             .project-body { grid-template-columns: 1fr; gap: 32px; }
 
             .project-media { flex-direction: column; }
-            .project-media-video video { height: 420px; width: 100%; object-fit: contain; }
+            .project-media-video { position: static; }
+            .project-media-video video { height: auto; width: 100%; object-fit: contain; }
 
             .project-gallery img { height: 420px; }
             .project-gallery video { height: 420px; }
@@ -962,7 +963,7 @@
         const videoObs = new IntersectionObserver(es => es.forEach(e => {
             if (e.isIntersecting) e.target.play().catch(() => {});
             else { e.target.pause(); e.target.currentTime = 0; }
-        }), { threshold: 0.5 });
+        }), { threshold: 0.2 });
         document.querySelectorAll('video').forEach(v => videoObs.observe(v));
 
         // Smooth scroll
