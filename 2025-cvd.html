@@ -346,6 +346,9 @@
             footer { flex-direction: column; gap: 40px; padding: 60px 28px; }
             .footer-links { text-align: left; }
         }
+            .portrait-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 32px; }
+        .portrait-grid img, .portrait-grid video { width: 100%; margin-top: 0; }
+        @media (max-width: 700px) { .portrait-grid { grid-template-columns: 1fr; } }
     </style>
 </head>
 <body>
@@ -385,11 +388,13 @@
             <h2>Campaign Design</h2>
             <p>Worked with creative director and global creative team, led vendor coordination to deliver the interactive birthday-themed experience.</p>
         </div>
-        <img src="Tiffany/2025_CVD/cvd-01.jpg" alt="CVD Campaign" loading="lazy">
-        <img src="Tiffany/2025_CVD/cvd-02.jpg" alt="CVD Campaign" loading="lazy">
-        <img src="Tiffany/2025_CVD/cvd-03.jpg" alt="CVD Campaign" loading="lazy">
-        <img src="Tiffany/2025_CVD/cvd-04.jpg" alt="CVD Campaign" loading="lazy">
-        <video src="Tiffany/2025_CVD/CVD-05.mp4" controls preload="metadata" style="margin-top:32px"></video>
+        <div class="portrait-grid">
+            <img src="Tiffany/2025_CVD/cvd-01.jpg" alt="CVD Campaign" loading="lazy">
+            <img src="Tiffany/2025_CVD/cvd-02.jpg" alt="CVD Campaign" loading="lazy">
+            <img src="Tiffany/2025_CVD/cvd-03.jpg" alt="CVD Campaign" loading="lazy">
+            <img src="Tiffany/2025_CVD/cvd-04.jpg" alt="CVD Campaign" loading="lazy">
+            <video src="Tiffany/2025_CVD/CVD-05.mp4" controls preload="metadata" style="margin-top:32px"></video>
+        </div>
     </section>
 
     <!-- Footer -->

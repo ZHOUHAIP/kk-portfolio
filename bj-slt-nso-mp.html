@@ -346,6 +346,9 @@
             footer { flex-direction: column; gap: 40px; padding: 60px 28px; }
             .footer-links { text-align: left; }
         }
+            .portrait-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 32px; }
+        .portrait-grid img, .portrait-grid video { width: 100%; margin-top: 0; }
+        @media (max-width: 700px) { .portrait-grid { grid-template-columns: 1fr; } }
     </style>
 </head>
 <body>
@@ -387,13 +390,15 @@
             <h2>Project Showcase</h2>
             <p>Coordinated PR copy delivery milestones, CRM requirements for new feature development, and EC team needs for related page launches and navigation flows. Participated in design and development discussions, providing design optimization feedback to ensure the project was delivered on time and supported online conversion for the brand.</p>
         </div>
-        <img src="Tiffany/BJ_SLT_NSO_MP/IMG_4432.PNG" alt="BJ SLT NSO MP" loading="lazy">
-        <img src="Tiffany/BJ_SLT_NSO_MP/IMG_4433.PNG" alt="BJ SLT NSO MP" loading="lazy">
-        <img src="Tiffany/BJ_SLT_NSO_MP/IMG_4434.PNG" alt="BJ SLT NSO MP" loading="lazy">
-        <img src="Tiffany/BJ_SLT_NSO_MP/IMG_4435.PNG" alt="BJ SLT NSO MP" loading="lazy">
-        <img src="Tiffany/BJ_SLT_NSO_MP/IMG_4436.PNG" alt="BJ SLT NSO MP" loading="lazy">
-        <img src="Tiffany/BJ_SLT_NSO_MP/IMG_4437.PNG" alt="BJ SLT NSO MP" loading="lazy">
-        <img src="Tiffany/BJ_SLT_NSO_MP/IMG_4438.PNG" alt="BJ SLT NSO MP" loading="lazy">
+        <div class="portrait-grid">
+            <img src="Tiffany/BJ_SLT_NSO_MP/IMG_4432.PNG" alt="BJ SLT NSO MP" loading="lazy">
+            <img src="Tiffany/BJ_SLT_NSO_MP/IMG_4433.PNG" alt="BJ SLT NSO MP" loading="lazy">
+            <img src="Tiffany/BJ_SLT_NSO_MP/IMG_4434.PNG" alt="BJ SLT NSO MP" loading="lazy">
+            <img src="Tiffany/BJ_SLT_NSO_MP/IMG_4435.PNG" alt="BJ SLT NSO MP" loading="lazy">
+            <img src="Tiffany/BJ_SLT_NSO_MP/IMG_4436.PNG" alt="BJ SLT NSO MP" loading="lazy">
+            <img src="Tiffany/BJ_SLT_NSO_MP/IMG_4437.PNG" alt="BJ SLT NSO MP" loading="lazy">
+            <img src="Tiffany/BJ_SLT_NSO_MP/IMG_4438.PNG" alt="BJ SLT NSO MP" loading="lazy">
+        </div>
     </section>
 
     <!-- Footer -->

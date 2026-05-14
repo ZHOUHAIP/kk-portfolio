@@ -318,6 +318,9 @@
             footer { flex-direction: column; gap: 40px; padding: 60px 28px; }
             .footer-links { text-align: left; }
         }
+            .portrait-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 32px; }
+        .portrait-grid img, .portrait-grid video { width: 100%; margin-top: 0; }
+        @media (max-width: 700px) { .portrait-grid { grid-template-columns: 1fr; } }
     </style>
 </head>
 <body>
@@ -351,10 +354,12 @@
             <h2>Red Carpet Photography</h2>
             <p>Reviewed and processed celebrity red carpet images for the Blue Book High Jewelry event.</p>
         </div>
-        <img src="Tiffany/BB_2025_Photo_Call/syq.jpg" alt="BB Photo Call" loading="lazy">
-        <img src="Tiffany/BB_2025_Photo_Call/zcx.jpg" alt="BB Photo Call" loading="lazy">
-        <img src="Tiffany/BB_2025_Photo_Call/zry.jpg" alt="BB Photo Call" loading="lazy">
-        <img src="Tiffany/BB_2025_Photo_Call/zzy.jpg" alt="BB Photo Call" loading="lazy">
+        <div class="portrait-grid">
+            <img src="Tiffany/BB_2025_Photo_Call/syq.jpg" alt="BB Photo Call" loading="lazy">
+            <img src="Tiffany/BB_2025_Photo_Call/zcx.jpg" alt="BB Photo Call" loading="lazy">
+            <img src="Tiffany/BB_2025_Photo_Call/zry.jpg" alt="BB Photo Call" loading="lazy">
+            <img src="Tiffany/BB_2025_Photo_Call/zzy.jpg" alt="BB Photo Call" loading="lazy">
+        </div>
     </section>
 
     <!-- Footer -->

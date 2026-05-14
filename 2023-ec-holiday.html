@@ -319,6 +319,9 @@
             footer { flex-direction: column; gap: 40px; padding: 60px 28px; }
             .footer-links { text-align: left; }
         }
+            .portrait-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 32px; }
+        .portrait-grid img, .portrait-grid video { width: 100%; margin-top: 0; }
+        @media (max-width: 700px) { .portrait-grid { grid-template-columns: 1fr; } }
     </style>
 </head>
 <body>
@@ -352,13 +355,15 @@
             <h2>Campaign Design</h2>
             <p>Supported the production of all visual and motion assets and worked closely with third-party developers to complete and launch the final digital experience. The campaign received strong feedback and delivered solid performance results.</p>
         </div>
-        <img src="Tiffany/2023_EC_Holiday/home.png" alt="EC Holiday" loading="lazy">
-        <img src="Tiffany/2023_EC_Holiday/home-share.png" alt="EC Holiday" loading="lazy">
-        <img src="Tiffany/2023_EC_Holiday/register.png" alt="EC Holiday" loading="lazy">
-        <img src="Tiffany/2023_EC_Holiday/shaking.png" alt="EC Holiday" loading="lazy">
-        <img src="Tiffany/2023_EC_Holiday/result.png" alt="EC Holiday" loading="lazy">
-        <img src="Tiffany/2023_EC_Holiday/share-snowglobe.png" alt="EC Holiday" loading="lazy">
-        <video src="Tiffany/2023_EC_Holiday/snowglobe.mp4" controls preload="metadata" style="margin-top:32px"></video>
+        <div class="portrait-grid">
+            <img src="Tiffany/2023_EC_Holiday/home.png" alt="EC Holiday" loading="lazy">
+            <img src="Tiffany/2023_EC_Holiday/home-share.png" alt="EC Holiday" loading="lazy">
+            <img src="Tiffany/2023_EC_Holiday/register.png" alt="EC Holiday" loading="lazy">
+            <img src="Tiffany/2023_EC_Holiday/shaking.png" alt="EC Holiday" loading="lazy">
+            <img src="Tiffany/2023_EC_Holiday/result.png" alt="EC Holiday" loading="lazy">
+            <img src="Tiffany/2023_EC_Holiday/share-snowglobe.png" alt="EC Holiday" loading="lazy">
+            <video src="Tiffany/2023_EC_Holiday/snowglobe.mp4" controls preload="metadata" style="margin-top:32px"></video>
+        </div>
     </section>
 
     <!-- Footer -->

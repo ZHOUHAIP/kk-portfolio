@@ -318,6 +318,9 @@
             footer { flex-direction: column; gap: 40px; padding: 60px 28px; }
             .footer-links { text-align: left; }
         }
+            .portrait-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 32px; }
+        .portrait-grid img, .portrait-grid video { width: 100%; margin-top: 0; }
+        @media (max-width: 700px) { .portrait-grid { grid-template-columns: 1fr; } }
     </style>
 </head>
 <body>
@@ -351,7 +354,9 @@
             <h2>Shenzhen Design</h2>
             <p>Under the concept "From the Tiffany window, one can see the world of Shenzhen," inspired by the brand's "Love for Our Oceans" theme.</p>
         </div>
-        <img src="Tiffany/Photo_Booklet/SZ_Photo_Booklet.png" alt="Shenzhen Photo Booklet" loading="lazy">
+        <div class="portrait-grid">
+            <img src="Tiffany/Photo_Booklet/SZ_Photo_Booklet.png" alt="Shenzhen Photo Booklet" loading="lazy">
+        </div>
     </section>
 
     <!-- Divider -->
@@ -365,8 +370,10 @@
             <h2>Beijing Design</h2>
             <p>Under the concept "Through a Chinese window, one can experience the world of Tiffany," centered on the Chinese New Year theme.</p>
         </div>
-        <img src="Tiffany/Photo_Booklet/BJ_Photo_Booklet.jpg" alt="Beijing Photo Booklet" loading="lazy">
-        <img src="Tiffany/Photo_Booklet/BJ_Booklet.jpg" alt="Beijing Booklet" loading="lazy">
+        <div class="portrait-grid">
+            <img src="Tiffany/Photo_Booklet/BJ_Photo_Booklet.jpg" alt="Beijing Photo Booklet" loading="lazy">
+            <img src="Tiffany/Photo_Booklet/BJ_Booklet.jpg" alt="Beijing Booklet" loading="lazy">
+        </div>
     </section>
 
     <!-- Divider -->
@@ -380,7 +387,9 @@
             <h2>Production</h2>
             <p>Collaborated with a third-party illustrator throughout the project, providing the creative brief, managing the timeline, and coordinating multiple rounds of design reviews to ensure the final artwork met project objectives.</p>
         </div>
-        <img src="Tiffany/Photo_Booklet/Production.jpg" alt="Production" loading="lazy">
+        <div class="portrait-grid">
+            <img src="Tiffany/Photo_Booklet/Production.jpg" alt="Production" loading="lazy">
+        </div>
     </section>
 
     <!-- Footer -->
